@@ -47,7 +47,15 @@ function App() {
   }, [coins, num]);
 
   const sendAlert = (obj) => {
-    emailjs
+
+    fetch(`https://api.coingecko.com/api/v3/coins/${obj.id}`)
+    .then(res => res.json())
+    .then(json => {
+      let contractName = json.asset_platform_id && json.asset_platform_id
+      let str = `Name : ${json.name} || Platform : ${contractName} || Contract : ${json.platforms[contractName]}`
+      obj.str = str
+
+      emailjs
       .send(
         "service_pdhtum6",
         "template_7k3gm5e",
@@ -62,6 +70,9 @@ function App() {
           console.log(error.text);
         }
       );
+    })
+
+
   };
 
   // const fetchCoinData = (id) => {
