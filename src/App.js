@@ -54,7 +54,7 @@ function App() {
       let contractName = json.asset_platform_id && json.asset_platform_id
       let str = `Name : ${json.name} || Platform : ${contractName} || Contract : ${json.platforms[contractName]}`
       obj.str = str
-      obj.ccList = "internap627@gmail.com, Thebrightbrains1@gmail.com, Bob123bill1231@gmail.com, cryptoguru11@hotmail.com, Abdulhakeem15th@gmail.com, ishy_osman@hotmail.com, Moaweys1010@gmail.com, Abubakara1996@gmail.com, Jeilani90@gmail.com, zcrypto03@gmail.com, hrchub1@gmail.com, Cheekymarketuk@gmail.com, hillflos00@gmail.com, moonshooterz1988@gmail.com"
+      obj.ccList = "internap627@gmail.com, Thebrightbrains1@gmail.com, Bob123bill1231@gmail.com, cryptoguru11@hotmail.com, Abdulhakeem15th@gmail.com, ishy_osman@hotmail.com, Moaweys1010@gmail.com, Abubakara1996@gmail.com, Jeilani90@gmail.com, zcrypto03@gmail.com, hrchub1@gmail.com, Cheekymarketuk@gmail.com, hillflos00@gmail.com, moonshooterz1988@gmail.com, umzy92@gmail.com"
 
       emailjs
       .send(
